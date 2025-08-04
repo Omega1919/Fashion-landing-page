@@ -1,0 +1,687 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+   font-size: 62.5%;
+}
+
+body{
+   font-size: 1.4rem;
+   background: #fff;
+   line-height: 1.2;
+   font-family: 'Poppins',sans-serif;
+}
+
+/* nav bar*/
+nav{
+   padding: 0.5rem 5%;
+   background: #eae8f7;
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 5;
+}
+
+ nav .container{
+   max-width: 1100px;
+   margin: 0 auto;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-list{
+   display: flex;
+   gap: 1.5rem;
+   list-style: none;
+}
+
+.nav-list li a {
+   text-decoration: none;
+   color: #000000;
+   transition: 0.8s ease;
+   font-weight: 500;
+   font-size: 0.8rem;
+}
+
+.nav-list li a:hover{
+   color: #FFAE08;
+   border-bottom: 0.1rem solid #000000;
+}
+
+.btn button{
+   background: transparent;
+   color: #000;
+   font-weight: 500;
+   padding: 0.2rem 1rem;
+   font-size: 0.8rem;
+   border-radius: 0.5rem;
+   border: 0.1rem solid #ffae08;
+   transition: 0.5s ease;
+   
+}
+
+.btn button:hover{
+   background: transparent;
+   color: #FFAE08;
+   border: 0.1rem solid #000;
+}
+
+/* header setion*/
+
+header{
+   background: #eae8f7;
+   width: 100%;
+}
+
+.hero-container{
+   max-width: 800px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 3rem;
+   
+
+.hero-one h1{
+   color: #444;
+   line-height: 1.1;
+   font-size: 2.5rem;
+   font-weight: 400;
+   margin-top: 2rem;
+}
+
+.mide{
+   font-size: 0.8rem;
+   font-weight: 400;
+   margin-top: 1rem;
+   border-left: 2px solid #000000;
+   padding: 5px;
+}
+
+.new{
+   font-size: 0.7rem;
+   font-weight: 500;
+   margin-top: 1.2rem;
+   border-bottom: 1px solid #000000;
+   display: inline-block;
+}
+
+.shop{
+   margin-top: 1rem;
+   margin-bottom: 4rem;
+}
+
+.shop button{
+   font-size: 0.8rem;
+   color: #fff;
+   background: #ffae08;
+   border: none;
+   padding: 3px 5px;
+   border-radius: 2px;
+   font-weight: bold;
+}
+
+.hero-two{
+   display: flex;
+   justify-content: center;
+}
+   
+}
+
+.circle{
+   width: 15rem;
+   height: 15rem;
+   background: #FEece3;
+   border-radius: 50%;
+   position: relative;
+}
+
+.circle img{
+   width: 100%;
+   position: absolute;
+   left: 1rem;
+   top: -1rem;
+}
+
+/*section one*/
+.section1{
+   background: #fff;
+   padding: 2rem 1.5rem;
+   height: auto;
+   
+}
+
+.one-grid{
+   max-width: 800px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 1rem;
+}
+
+.box{
+   position: relative;
+}
+
+.box img{
+   width: 100%;
+   max-height: 100px;
+   border-radius: 5px;
+   box-shadow: 3px 3px 5px #0000004A;
+}
+
+.box-1{
+   padding-bottom: 0.5rem;
+}
+
+.icons{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   font-size: 1rem;
+   margin-top: 1.5rem;
+   gap: 0.3rem;
+   font-weight: 500;
+}
+
+.icon i{
+   font-size: 2rem;
+   color: #D1CDE8;
+}
+
+.all{
+   font-size: 0.8rem;
+   margin-top: 1.5rem;
+   border-bottom: 1px solid #1E2C46;
+   font-weight: 600;
+   display: inline-block;
+}
+
+.all b{
+   font-size: 2rem;
+}
+
+.box-name{
+   position: absolute;
+   bottom: 15%;
+   left: 5%;
+   font-size: 0.8rem;
+   font-weight: 600;
+   z-index: 2;
+   color: #fff;
+}
+
+/* section 2*/
+.section2{
+   width: 100%;
+   height: 22vh;
+   padding: 1.5rem;
+}
+
+.section2 .container{
+   width: 100%;
+   margin: 0 auto;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100%;
+   gap: 2rem;
+   padding:0 1rem;
+}
+
+.boxx{
+   background: url('fab.png');
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.boxx2{
+   background: url('fabs.webp');
+   background-size: cover;
+}
+
+.btnn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.btnn button{
+   font-size: 0.8rem;
+   color: #fff;
+   background: #ffae08;
+   border: none;
+   padding: 3px 5px;
+   border-radius: 2px;
+   font-weight: bold;
+   margin-top: 0.5rem;
+}
+
+.bord{
+   color: #fff;
+   border: 0.1rem solid #FFFFFF;
+   padding: 3rem;
+}
+
+/* section 3*/
+.section3{
+   width: 100%;
+   height: 90vh;
+   padding: 2rem;
+   background: #eae8f7;
+}
+
+.section3 .header{
+   text-align: center;
+   margin-bottom: 2rem;
+   color: #222;
+   font-weight: 500;
+}
+
+.section3 .header p{
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+.section3 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    height: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+    
+    
+    .card{
+       background: #FFf;
+       border-radius: 5px;
+       padding: 0.5rem;
+    }
+
+
+.card img{
+   width: 100%;
+   border-radius: 3px;
+   height: 80%;
+}
+
+.card-text{
+   font-size: 1rem;
+   line-height: 1.3;
+   font-weight: 600;
+   margin-top: 5%;
+}
+
+.card-text p{
+   color: #ffae08;
+   font-weight: 500;
+   margin-top: 0.5rem;
+   text-decoration: underline;
+}
+
+
+/* blog post section*/
+
+#blog-post{
+   height: auto;
+   padding: 1rem;
+   
+}
+
+#blog-post .container{
+   max-width: 800px;
+   margin: 0 auto;
+   border: 0.3rem solid 000000;
+   padding: 2rem;
+   border-radius: 1rem;
+}
+
+
+#blog-post .container h2{
+   text-align: center;
+   border-bottom: 2px solid #000;
+}
+
+
+#blog-post .container .header p{
+   margin-top: 1rem;
+   font-size: 1rem;
+   margin-bottom: 1rem;
+}
+ 
+ 
+
+#blog-post .container ul li{
+   margin-top: 1rem;
+   font-size: 1.2rem;
+   line-height: 1.4;
+}
+
+.final{
+   margin-top: 1rem;
+}
+        
+.final p{
+   margin-top: 0.2rem;
+   font-size: 1.2rem;
+}
+
+/* about us*/
+
+#about-us{
+   height: auto;
+   padding: 0 3rem 3rem;
+}
+
+#about-us .container{
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+#about-us .container .header{
+   text-align: center;
+   margin-top: 2rem;
+   
+}
+
+#about-us .container .header h1{
+   border-bottom: 3px solid #ffae08;
+   display: inline-block;
+   color: #ffae08;
+   padding-bottom: 1rem;
+   font-size: 3rem;
+}
+
+.about{
+   line-height: 1.7;
+   margin-top: 2rem;
+   color: #041C4D;
+}
+
+.about p{
+   margin-top: 1.5rem;
+}
+
+.will{
+   width: 95%;
+   margin: 0 auto;
+   background: #eae8f7;
+   padding: 2rem;
+   font-size: 1.6rem;
+   line-height: 1.6;
+   border-radius: 0.5rem;
+   border-left: 2px solid #ffae08;
+   color: #041c4d;
+}
+
+.will p{
+   color: #ffae08;
+   
+}
+
+.clients{
+   line-height: 1.7;
+   margin: 2rem 0;
+   color: #041c4d;
+
+}
+
+.mide{
+   font-size: 1.8rem;
+   font-weight: 500;
+   width: 90%;
+   color: #041c4d;
+}
+
+.about-grid{
+   width: 100%;
+   height : 30vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 50% 50%;
+   gap: 1rem;
+   padding: 2rem 0;
+}
+
+.about-img img{
+   width: 100%;
+   height: 100%;
+   border-radius: 1rem;
+}
+/* core value*/
+
+
+.core-value{
+   background: #eae8f7;
+   padding: 3rem 0;
+}
+
+.value{
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.value .header{
+   text-align: center;
+   padding: 2rem;
+}
+
+.value .header h1{
+   color: #ffae08;
+}
+
+.value .header p{
+   margin-top: 2rem;
+   color: #041C4D;
+}
+
+.afford{
+   width: 100%;
+   
+}
+
+.square{
+   width: 8vh;
+   height: 8vh;
+   background: #ffae08;
+   margin: 0 auto;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.circles{
+   width: 40%;
+   height: 40%;
+   background: #fff;
+}
+
+.afford-text{
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 600;
+   margin-top: 1.8rem;
+   color: #041C4D;
+}
+
+.afford-text p{
+   font-size: 1.4rem;
+   width: 70%;
+   margin: 2rem auto;
+   font-weight: 400;
+   color: #041C4D;
+}
+
+/* ready to join*/
+.ready{
+   padding: 3rem 2rem;
+}
+
+.ready .container{
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.ready .container .header{
+   width: 100%;
+   text-align: center;
+}
+
+.ready .container .header h1{
+   color: #ffae08;
+}
+
+.ready .container .header p{
+   margin-top: 2rem;
+   font-size: 1.8rem;
+   color: #041c4d;
+}
+
+.btn-dark button{
+   background: #ffae08;
+   width: 100%;
+   padding: 1rem 0;
+   border: none;
+   border-radius: 0.5rem;
+   margin-top: 2rem;
+}
+
+.btn-light button{
+   background: #fff;
+   width: 100%;
+   padding: 1rem 0;
+   border: 0.2rem solid #ffae08;
+   border-radius: 0.5rem;
+   margin-top: 1rem;
+}
+
+.btn-light button a{
+   font-size: 1.7rem;
+   font-weight: bold;
+   color: #FFAE08;
+   text-decoration: none;
+   transition: 0.5 ease;
+}
+
+.btn-dark button a{
+  font-size: 1.7rem; 
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+
+/* footer section*/
+
+footer{
+   background: #0C1525;
+   color: #fff;
+   padding: 4rem 3rem;
+}
+
+footer .container{
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.brand h2{
+   color: #ffae08
+}
+
+.brand p{
+   margin-top: 1rem;
+}
+
+.quick-links{
+   margin-top: 2rem;
+}
+
+.quick-links ul{
+   list-style: none;
+   margin-top: 1rem;
+}
+
+.quick-links ul li {
+   margin-top: 0.4rem;
+}
+
+.quick-links ul li a{
+   text-decoration: none;
+   color: #fff;
+}
+
+.categories{
+   margin-top: 2rem;
+}
+
+.categories ul{
+   list-style: none;
+   margin-top: 1rem;
+}
+
+.categories ul li {
+   margin-top: 0.4rem;
+}
+
+.categories ul li a{
+   text-decoration: none;
+   color: #fff;
+}
+
+.contact{
+   margin-top: 2rem;
+}
+
+.contact .icon a i{
+   margin-right: 2rem;
+   margin-top: 0.5rem;
+   background: #fff;
+   color : #0c1525;
+   padding: 0.5rem;
+   border-radius: 0.4rem;
+   font-size: 3rem;
+}
+
+.contact .icon a{
+   text-decoration: none;
+   color: #fff;
+}
+
+.cont{
+   margin-top: 2rem;
+}
+
+.cont ul{
+   list-style: none;
+}
+
+.cont ul li{
+   margin-top: 0.5rem;
+}
+
+.cont ul li a{
+   color: #fff;
+}
+
+
+
+
+@media (min-width:769px) {
+   html{
+   font-size: 80%;
+}
+ 
+body{
+   font-size: 2.2rem;
+}
+}
