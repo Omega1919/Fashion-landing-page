@@ -10,12 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <!--intergrate tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <nav>
     <div class="container">
       <div class="logo">
         <img src="head.png" alt="logo" />
+      </div>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <ul class="nav-list">
         <li><a href="#">Home</a></li>
@@ -45,16 +52,16 @@
           <h1>
             New
             <br />Collection
-            </h1>
+          </h1>
         <div class="shop">
           <button>
-      Shop Now <i class="fas fa-arrow-right"></i>
+            Shop Now <i class="fas fa-arrow-right"></i>
           </button>
         </div>
       </div>
         <div class="hero-two">
           <div class="circle">
-            <img src="head.png" alt="fabrics" />
+            <img src="/images/head.png" alt="fabrics" />
           </div>
         </div>
       </div>
@@ -65,8 +72,8 @@
     <div class="one-grid">
       <div class="box-1">
         <h5>
-          Shop
-          <br>By Categories
+          Shop By
+          <br>Categories
         </h5>
         <div class="icons">
           <div class="icon">
@@ -103,35 +110,13 @@
     </div>
   </section>
 
-    <!-- Section 2-->
+  <!--
   <section class="section2">
-     <div class="container">
+    <div class="container">
       <div class="boxx boxx1">
-        <div class="bord">
-         <h5>
-           Textile Collection
-         </h5>
-        <div class="btnn">
-         <button>
-           Shop Now <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-       </div>
       </div>
-      <div class="boxx boxx2">
-       <div class="bord">
-         <h5>
-           Textile Collection
-         </h5>
-        <div class="btnn">
-         <button>
-           Shop Now <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-       </div>
-      </div>
-     </div>
-  </section>
+    </div>
+  </section>-->
 
     <!-- Section 3-->
     <section class="section3">
@@ -185,20 +170,20 @@
         <p>N25,000 per yard</p>
       </div>
     </div>
-    
+
     <div class="card card6">
         <img src="images/6.jpg" alt="fabric" />
-      
+
       <div class="card-text">
         Turkish Merino Wool
         <br />
         <p>N3,500 per yard</p>
       </div>
     </div>
-    
+
     <div class="card card7">
         <img src="images/7.jpg" alt="fabric" />
-      
+
       <div class="card-text">
         Cashmere 380
         <br />
@@ -267,7 +252,7 @@
   <section id="about-us">
     <div class="container">
       <div class="header">
-        <h1>
+        <h1 id="header">
           About Us
         </h1>
       </div>
@@ -313,7 +298,7 @@
         <h1>
           Our Core Values
         </h1>
-        <p>
+        <p id="value-p">
           The principal that guide everything we do
         </p>
       </div>
@@ -355,44 +340,42 @@
     </div>
   </div>
 </section>
-  
+
   <div class="ready">
     <div class="container">
-      <div class="header">
+      <div class="header2">
         <h1>
-          Ready to experience <br /> quality?
+          Ready to experience quality?
         </h1>
         <p>
           Join thousands of customers who trust <br /> <b>MIDE'S FABRICS</b> for their textile needs
         </p>
       </div>
       <div class="btn-dark">
-        <button>
+        <button class="btn-dark2">
           <a href="#">Browse Collection</a>
         </button>
       </div>
       <div class="btn-light">
-        <button>
+        <button class="btn-light2">
           <a href="#">Contact Us</a>
         </button>
       </div>
     </div>
   </div>
-  
-  
-  
+
     <!-- Footer section-->
     <footer>
       <div class="container">
         <div class="brand">
           <h2>
-            MIDE'S FABRICS 
+            MIDE'S FABRICS
           </h2>
           <p>
             Authentic,Affordable, Quality Fabrics.
           </p>
         </div>
-        
+
         <div class="quick-links">
           <h3>
             Quick Links
@@ -404,7 +387,7 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        
+
         <div class="categories">
           <h3>
             Categories
@@ -416,10 +399,10 @@
             <li>Wool</li>
           </ul>
         </div>
-        
+
         <div class="contact">
           <h3>
-            Contact 
+            Contact Us
           </h3>
           <div class="icon">
             <a href="#">
@@ -464,5 +447,13 @@
             <li><a href="#section3">Collection</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+<script>
+  const hamburger = document.getElementById('hamburger-menu');
+  const navList = document.querySelector('.nav-list');
+  hamburger.addEventListener('click', function() {
+    navList.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
