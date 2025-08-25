@@ -1,0 +1,208 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+   font-size: 62.5%;
+}
+
+body{
+   font-size: 1.4rem;
+   background: #eae8f7;
+   line-height: 1.2;
+   font-family: 'Poppins',sans-serif;
+}
+
+/* nav bar*/
+nav{
+   padding: 0.5rem 5%;
+   background: #eae8f7;
+}
+
+ nav .container{
+   max-width: 1100px;
+   margin: 0 auto;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-list{
+   display: flex;
+   gap: 1.5rem;
+   list-style: none;
+}
+
+.nav-list li a {
+   text-decoration: none;
+   color: #000000;
+   transition: 0.8s ease;
+   font-weight: 500;
+   font-size: 0.8rem;
+}
+
+.nav-list li a:hover{
+   color: #FFAE08;
+   border-bottom: 0.1rem solid #000000;
+}
+
+/* header*/
+.wrapper{
+   background: #fff;
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   background: #eae8f7
+}
+
+header .container{
+   max-width: 1100px;
+   margin: 0 auto;
+   text-align: center;
+   z-index: 3;
+   padding: 3rem 3rem 0 3rem;
+}
+
+header .container h1{
+   font-size: 2.5rem;
+}
+
+header .container p{
+   font-size: 1.5rem;
+   margin-top: 1rem;
+}
+
+
+
+.section-nav .container{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 2rem 2rem;
+}
+
+.one{
+   text-align: center;
+}
+
+.two{
+   text-align: center;
+}
+
+
+.three{
+   text-align: center;
+}
+
+.four{
+   text-align: center;
+}
+
+.one a,.two a,.three a,.four a{
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 1.5rem;
+   border: 2px solid black;
+   padding: 0.3rem 0;
+   display: block;
+   transition: 0.6s ease;
+   color: #000;
+   cursor: pointer;
+}
+
+.one a:hover {
+   background: #ffae08;
+   color: #ffd;
+}
+
+.two a:hover {
+   background: #ffae08;
+   color: #ffd;
+}
+
+.three a:hover {
+   background: #ffae08;
+   color: #ffd;
+}
+
+.four a:hover {
+   background: #ffae08;
+   color: #ffd;
+}
+
+/* collecition section*/
+.collection-container{
+   background: #F8F9FF;
+   padding: 2rem 1rem;
+   height: 30vh;
+   display: flex;
+   width: 100%;
+   align-items: center;
+}
+
+.description{
+   flex: 0 0 70%;
+}
+
+.fabric-header h2{
+   color: #ffae08;
+}
+
+.fabric-header p{
+   font-weight: bold;
+   margin-top: 0.5rem;
+}
+
+.price{
+   color: #ffae08;
+}
+
+.main-img{
+   width: 100%;
+   flex: 0 0 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-img img{
+   border-radius: 1rem;
+   width: 90%;
+}
+
+.color-des{
+   display: flex;
+   background: #EF8BBC;
+}
+
+.color{
+   background: #A8EF8B;
+   flex : 0 0 40%;
+}
+.avail{
+   background :#E9EF8B;
+   overflow: auto;
+}
+
+.avail img{
+   width: 50%;
+   margin-top: 5px;
+   height: 40px;
+}
+
+
+@media (min-width:769px) {
+   html{
+   font-size: 80%;
+}
+
+body{
+   font-size: 2.2rem;
+}
+}
