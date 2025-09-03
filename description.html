@@ -5,28 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Collection page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+
     <!--Nav bar-->
-    <div class="wrapper">
-  <nav class="nav-bar">
-     <div class="container">
-       <div class="logo">
+    <div class="py-2 bg-gray-200 shadow-lg wrapper">
+        <nav class="container bg-white-300 mx-auto py-4">
+     <div class="h-12 flex justify-between items-center">
+       <div class="flex justify-between items-center gap-2">
+        <button onclick="window.history.back('/index.html')" class="flex items-center gap-2 font-medium text-black px-4 py-2 transition hover:transition hover:duration-600 hover:ease-in-out hover:bg-yellow-500 hover:rounded-md">
+            <!-- Left Arrow Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back
+        </button>
          <img src="#" alt="logo" />
        </div>
-       <ul class="nav-list">
-         <li><a href="#">Home</a></li>
-         <li><a href="#">Contact</a></li>
-         <li><a href="#">About</a></li>
+       <ul class="nav-link">
+         <li class="nav-links"><a href="/index.html">Home</a></li>
+         <li class="nav-links"><a href="#">Contact</a></li>
+         <li class="nav-links"><a href="#">About</a></li>
        </ul>
      </div>
   </nav>
     <!--header-->
 <header>
-  <div class="container">
+  <div class="header-content container mx-auto text-center">
      <h1>
-       Experience the Pinnacle of Fabric Excellence and Elegance
+       Experience the Pinnacle of Fabric Elegance
      </h1>
         <p>
           Discover an exclusive collection of the world’s finest textiles, meticulously sourced and crafted to elevate your style.
@@ -34,7 +46,7 @@
   </div>
 </header>
 
-<div class="section-nav">
+<!--<div class="section-nav">
   <div class="container">
     <div class="one">
       <a href="#">One</a>
@@ -50,7 +62,7 @@
     </div>
   </div>
 </div>
-</div>
+</div>-->
 
 <div class="collection-container">
     <div class="description">
@@ -75,10 +87,10 @@
      </div>
 
    <div class="avail">
-     <img class="miniImage" src="image/A2.jpg" alt="Image 2">
-     <img class="miniImage" src="image/A3.jpg" alt="Image 3">
-     <img class="miniImage" src="image/A4.jpg" alt="Image 4">
-     <img class="miniImage" src="image/A5.jpg" alt="Image 5">
+     <img class="miniImage" src="/images/A2.jpg" alt="Image 2">
+     <img class="miniImage" src="/images/A3.jpg" alt="Image 3">
+     <img class="miniImage" src="/images/A4.jpg" alt="Image 4">
+     <img class="miniImage" src="/images/A5.jpg" alt="Image 5">
  </div>
    </div>
 
@@ -90,7 +102,7 @@
    </div>
 
     <div class="main-img">
-         <img class="mainImage" src="image/A10.jpg" alt="fabrics" />
+         <img class="mainImage" src="/images/A10.jpg" alt="fabrics" />
     </div>
 </div>
 <script src="script.js"></script>

@@ -4,7 +4,163 @@
    box-sizing: border-box;
 }
 
-html{
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.berkshire-swash-regular {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.berkshire-swash-italic {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.roboto - <uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.nav-link {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    gap: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.8s ease;
+
+}
+
+.nav-links {
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.8s ease;
+
+}
+
+.nav-links:hover{
+   color: #FFAE08;
+   border-bottom: 0.1rem solid #ffae08;
+}
+
+/*html{
    font-size: 62.5%;
 }
 
@@ -15,7 +171,7 @@ body{
    font-family: 'Poppins',sans-serif;
 }
 
-/* nav bar*/
+/* nav bar
 nav{
    padding: 0.5rem 5%;
    background: #eae8f7;
@@ -36,20 +192,9 @@ nav{
    list-style: none;
 }
 
-.nav-list li a {
-   text-decoration: none;
-   color: #000000;
-   transition: 0.8s ease;
-   font-weight: 500;
-   font-size: 0.8rem;
-}
 
-.nav-list li a:hover{
-   color: #FFAE08;
-   border-bottom: 0.1rem solid #000000;
-}
 
-/* header*/
+/* header
 .wrapper{
    background: #fff;
    position: sticky;
@@ -64,6 +209,7 @@ header .container{
    margin: 0 auto;
    text-align: center;
    z-index: 3;
+   font-weight: 500;
    padding: 3rem 3rem 0 3rem;
 }
 
@@ -136,7 +282,7 @@ header .container p{
    color: #ffd;
 }
 
-/* collecition section*/
+/* collecition section*
 .collection-container{
    background: #F8F9FF;
    padding: 2rem 1rem;
@@ -206,3 +352,5 @@ body{
    font-size: 2.2rem;
 }
 }
+*/
+
